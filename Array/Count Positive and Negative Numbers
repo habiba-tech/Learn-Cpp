@@ -1,0 +1,19 @@
+include <iostream>
+using namespace std;
+
+int main() {
+    int arr[5], pos = 0, neg = 0;
+
+    cout << "Enter 5 numbers: ";
+    for (int i = 0; i < 5; i++) {
+        cin >> arr[i];
+        if (arr[i] >= 0)
+            pos++;
+        else
+            neg++;
+    }
+
+    cout << "Positive numbers = " << pos << endl;
+    cout << "Negative numbers = " << neg;
+    return 0;
+}
