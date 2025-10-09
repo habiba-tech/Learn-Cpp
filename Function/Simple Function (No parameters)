@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+// Function definition
+void sayHello() {
+    cout << "Hello, welcome to C++!" << endl;
+}
+
+int main() {
+    sayHello();   // Function call
+    return 0;
+}
