@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int square(int n) {
+    return n * n;
+}
+
+void displaySquare(int x) {
+    cout << "Square of " << x << " is " << square(x) << endl;
+}
+
+int main() {
+    displaySquare(6);
+    return 0;
+}
