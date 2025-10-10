@@ -1,0 +1,26 @@
+include <iostream>
+using namespace std;
+
+class Car {
+public:
+    string brand;
+    int year;
+
+    void show() {
+        cout << brand << " - " << year << endl;
+    }
+};
+
+int main() {
+    Car c1, c2;
+
+    c1.brand = "Toyota";
+    c1.year = 2018;
+
+    c2.brand = "Tesla";
+    c2.year = 2022;
+
+    c1.show();
+    c2.show();
+    return 0;
+}
