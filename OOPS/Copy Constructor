@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+class Student {
+public:
+    string name;
+    int age;
+
+    Student(string n, int a) {
+        name = n;
+        age = a;
+    }
+
+    // Copy Constructor
+    Student(const Student &obj) {
+        name = obj.name;
+        age = obj.age;
+    }
+
+    void display() {
+        cout << "Name: " << name << ", Age: " << age << endl;
+    }
+};
+
+int main() {
+    Student s1("Habiba", 18);
+    Student s2 = s1;  // copy constructor called
+
+    s1.display();
+    s2.display();
+    return 0;
+}
