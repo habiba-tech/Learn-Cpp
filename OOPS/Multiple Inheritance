@@ -1,0 +1,31 @@
+include <iostream>
+using namespace std;
+
+class Father {
+public:
+    void showFather() {
+        cout << "Traits from Father" << endl;
+    }
+};
+
+class Mother {
+public:
+    void showMother() {
+        cout << "Traits from Mother" << endl;
+    }
+};
+
+class Child : public Father, public Mother {
+public:
+    void showChild() {
+        cout << "Traits of Child" << endl;
+    }
+};
+
+int main() {
+    Child c;
+    c.showFather();
+    c.showMother();
+    c.showChild();
+    return 0;
+}
