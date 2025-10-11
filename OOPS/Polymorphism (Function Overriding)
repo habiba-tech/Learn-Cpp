@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+class Animal {
+public:
+    virtual void sound() {   // Virtual function
+        cout << "Some generic animal sound" << endl;
+    }
+};
+
+class Dog : public Animal {
+public:
+    void sound() override {  // Override base class method
+        cout << "Dog barks" << endl;
+    }
+};
+
+int main() {
+    Animal* ptr;
+    Dog d;
+
+    ptr = &d;
+    ptr->sound();  // Calls Dog's version (runtime binding)
+    return 0;
+}
