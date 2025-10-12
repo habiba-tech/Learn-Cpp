@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+class Student {
+private:
+    int age;        // data hidden from outside
+
+public:
+    void setAge(int a) {   // setter function
+        if (a > 0)
+            age = a;
+        else
+            cout << "Invalid age!" << endl;
+    }
+
+    int getAge() {         // getter function
+        return age;
+    }
+};
+
+int main() {
+    Student s1;
+    s1.setAge(18);                // setting value safely
+    cout << "Student age: " << s1.getAge() << endl;
+    return 0;
+}
