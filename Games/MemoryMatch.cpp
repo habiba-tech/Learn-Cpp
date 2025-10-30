@@ -17,7 +17,7 @@ int main() {
         swap(cards[i], cards[j]);
     }
 
-    cout << "🧠 MEMORY MATCH GAME 🧠\n";
+    cout << "MEMORY MATCH GAME \n";
     cout << "Find all pairs to win!\n\n";
 
     while (matches < SIZE / 2) {
@@ -37,7 +37,7 @@ int main() {
             hidden[choice2] = cards[choice2];
             matches++;
         } else {
-            cout << "❌ No match. Try again!\n";
+            cout << " No match. Try again!\n";
         }
 
         cout << "-----------------------------\n";
